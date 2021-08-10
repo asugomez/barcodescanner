@@ -73,6 +73,10 @@ public abstract class BarcodeScannerView extends FrameLayout implements Camera.P
     private void init() {
         mViewFinderView = createViewFinderView(getContext());
     }
+    
+    public getCamPreview(){
+        return this.mPreview;
+    }
 
     public final void setupLayout(CameraWrapper cameraWrapper) {
         removeAllViews();
