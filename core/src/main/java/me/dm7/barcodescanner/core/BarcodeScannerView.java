@@ -334,5 +334,10 @@ public abstract class BarcodeScannerView extends FrameLayout implements Camera.P
         int displayOrientation = mPreview.getDisplayOrientation();
         return displayOrientation / 90;
     }
+    
+    public CameraPreview getCamPreview(){
+        return this.mPreview;
+    }
+    
 }
 
